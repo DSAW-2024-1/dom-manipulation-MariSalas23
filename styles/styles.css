@@ -2,4 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:hsl(212, 98%, 16%);
+}
+
+.colores{
+    color:hsl(191, 99%, 40%);
+    color:hsl(189, 100%, 88%);
+    color:hsl(287, 100%, 31%);
+    color:hsl(255, 100%, 88%);
+    color:hsl(286, 100%, 93%);
+    color:hsl(0, 0%, 100%);
 }
