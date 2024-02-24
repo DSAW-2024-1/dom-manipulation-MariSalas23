@@ -4,17 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap">
     <title>My To Do List</title>
   </head>
 
-  <body class="background">
-    <main>
-      <img src="../assets/dom-img-01.jpg" alt="Imagen manejo del tiempo">
-      <div class="container"></div>  
-        <h1>TO DO</h1>
-        <script src="scripts/script.js"></script>
+  <body>
+    <div class="container">
+
+      <div class = "image-container">
+        <img src="./assets/dom-img-02.jpg" alt="Imagen manejo del tiempo">
       </div>
-    </main>
+
+      <div class="white-container">
+        
+        <div class="header">
+          <p>Fecha</p>
+          <h1>¡Hola! Planifica tu día</h1>
+        </div>
+
+        <form onsubmit="addList(event)">
+          <input type="text" name="lists" placeholder="Ingresa una tarea" required>
+          <button type="submit" class="addButton">+</button>
+          <button type="button" class="deleteAllButton" onclick="deleteAllTasks()">Borrar todo</button>
+        </form>
+
+        <div id = "list-container">
+          <i class="fas fa-trash de">
+        </div>
+      </div>
+    </div>  
+    <script src="scripts/script.js"></script>
   </body>
 </html>
