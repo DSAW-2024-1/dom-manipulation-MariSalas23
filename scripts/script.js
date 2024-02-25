@@ -1,38 +1,39 @@
 const taskContainer = document.getElementById('list-container');
-
 const addList = event => {
     event.preventDefault();
     const { value } = event.target.lists;
     if (!value) return;
+
     const task = document.createElement('div');
     task.classList.add('task');
-    task.addEventListener('click', changeTaskState);
-    task.textContent = value;
-    taskContainer.appendChild(task);
-    event.target.reset();
 
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+            task.classList.add('done');
+        } else {
+            task.classList.remove('done');
+        }
+    });
+
+    const textSpan = document.createElement('span');
+    textSpan.textContent = value;
 
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = '✖️';
+    deleteButton.textContent = '🗑️';
     deleteButton.classList.add('deleteButton');
     deleteButton.addEventListener('click', () => {
         task.remove();
     });
 
+    task.appendChild(checkbox);
+    task.appendChild(textSpan);
     task.appendChild(deleteButton);
+
     taskContainer.appendChild(task);
+
     event.target.reset();
-};
-
-
-const changeTaskState = event => {
-    const targetElement = event.target;
-    if (!targetElement.classList.contains('deleteButton')) {
-        const task = targetElement.closest('.task');
-        if (task) {
-            task.classList.toggle('done');
-        }
-    }
 };
 
 window.onload = function() {
