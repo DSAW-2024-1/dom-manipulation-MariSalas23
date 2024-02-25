@@ -114,8 +114,9 @@ button,input,.task {
     color: var(--LightPurple); 
     font-weight: bold;
     height: auto;
-    padding: 0.1rem;
+    padding: 0.2rem;
     border-radius: 50%;
+    font-size: 0.7rem;
 }
 
 .task {
@@ -180,6 +181,11 @@ button,input,.task {
     
     .addButton {
         width: 2.6rem;
+    }
+
+    .deleteButton {
+        padding: 0.3rem;
+        font-size: 0.9rem;
     }
     
     .deleteAllButton {
@@ -267,16 +273,16 @@ button,input,.task {
 
 .addButton:hover {
     background-image: linear-gradient(to right, hsl(287, 100%, 31%), hsl(191, 99%, 40%));
-    box-shadow: 0rem 1rem 1rem hsla(197, 86%, 50%, 0.5);
+    box-shadow: 0rem 0.5rem 0.5rem hsla(197, 86%, 50%, 0.5);
     color: var(--White)
 }
 
 .deleteAllButton:hover {
     background-image: linear-gradient(to right, hsl(347, 100%, 63%), hsl(12, 100%, 63%));
-    box-shadow: 0rem 1rem 1rem hsla(347, 100%, 63%, 0.5);
+    box-shadow: 0rem 0.5rem 0.5rem hsla(347, 100%, 63%, 0.5);
     color: var(--White)
 }
 
 .task:hover {
-    box-shadow: 0rem 0.5rem 0.5rem hsla(0, 0%, 51%, 0.5);
+    box-shadow: 0rem 0.5rem 0.5rem hsla(267, 25%, 48%, 0.5);
 }
