@@ -278,5 +278,5 @@ button,input,.task {
 }
 
 .task:hover {
-    background-image: linear-gradient(to right, hsl(255, 100%, 88%), hsl(286, 100%, 93%));
+    box-shadow: 0rem 0.5rem 0.5rem hsla(0, 0%, 51%, 0.5);
 }
