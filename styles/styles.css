@@ -277,14 +277,14 @@ button,input,.task {
 /* Hover */
 
 .addButton:hover {
-    background-image: linear-gradient(to right, hsl(287, 100%, 31%), hsl(191, 99%, 40%));
+    background-image: linear-gradient(to left, hsl(287, 100%, 31%), hsl(191, 99%, 40%));
     box-shadow: 0rem 0.5rem 0.5rem hsla(197, 86%, 50%, 0.5);
     color: var(--White)
 }
 
 .deleteAllButton:hover {
-    background-image: linear-gradient(to right, hsl(347, 100%, 63%), hsl(12, 100%, 63%));
-    box-shadow: 0rem 0.5rem 0.5rem hsla(347, 100%, 63%, 0.5);
+    background-image: linear-gradient(to right, hsl(287, 100%, 31%), hsl(191, 99%, 40%));
+    box-shadow: 0rem 0.5rem 0.5rem hsla(197, 86%, 50%, 0.5);
     color: var(--White)
 }
 

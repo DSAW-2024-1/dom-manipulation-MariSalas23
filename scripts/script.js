@@ -1,4 +1,6 @@
 const taskContainer = document.getElementById('list-container');
+
+// Creación de elementos de la lista
 const addList = event => {
     event.preventDefault();
     const { value } = event.target.lists;
@@ -36,6 +38,7 @@ const addList = event => {
     event.target.reset();
 };
 
+// Fecha actual
 window.onload = function() {
     const dateElement = document.querySelector('p');
     const currentDate = new Date();
@@ -43,6 +46,7 @@ window.onload = function() {
     dateElement.textContent = formattedDate;
 };
 
+// Botón de eliminar todo
 const deleteAllTasks = () => {
     console.log('Borrando todas las tareas');
     const tasks = document.querySelectorAll('.task');
