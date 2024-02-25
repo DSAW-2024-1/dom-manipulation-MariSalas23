@@ -5,6 +5,18 @@
 
 https://dsaw-2024-1.github.io/dom-manipulation-MariSalas23/
 
+## Imágenes
+
++1024px
+![Vista en desktop](./assets/img-03.jpg)
+![Hover en los botones](./assets/img-04.jpg)
+
+320px x 480px
+![Vista en celular](./assets/img-01.jpg)
+
+768px x 1024px
+![Vista en tablet](./assets/img-02.jpg)
+
 # Lista de Tareas
 
 Esta tarea consiste en crear una aplicación de lista de tareas utilizando HTML, CSS y JavaScript. La aplicación debe ser capaz de crear, eliminar y marcar tareas como completadas. Además, se espera que el diseño sea responsive y se adapte correctamente a las medidas de dispositivos móviles, tablets y desktops.

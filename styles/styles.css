@@ -1,3 +1,4 @@
+/*Colores*/
 :root {
     --DarkBlue: hsl(212, 98%, 16%);
     --Blue: hsl(191, 99%, 40%);
@@ -7,6 +8,8 @@
     --LightPink: hsl(286, 100%, 93%);
     --White: hsl(0, 0%, 100%);
 }
+
+/*MOBILE FIRST*/
 
 .background {
     background-color: var(--Blue);
@@ -138,6 +141,7 @@ button,input,.task {
 }
 
 /* 768px 1024px */
+
 @media (min-width: 768px) and (max-width: 1024px), (min-height: 768px)
 {
     * {
@@ -200,6 +204,7 @@ button,input,.task {
 }
 
 /* +1024px */
+
 @media (min-width: 1025px) or (min-height: 1025px) {
 
     body {
